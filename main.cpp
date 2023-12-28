@@ -99,6 +99,14 @@ std::unordered_map<std::wstring, std::vector<int>> SukurtiKryzmineNuoroduLentele
         }
     }
 
+    std::map<std::wstring, std::vector<int>> surusiuotiZodziai(kryzmineNuoroduLentele.begin(), kryzmineNuoroduLentele.end());
+
+    kryzmineNuoroduLentele.clear();
+
+    for (const auto& pora : surusiuotiZodziai) {
+        kryzmineNuoroduLentele.insert(pora);
+    }
+
     return kryzmineNuoroduLentele;
 }
 
