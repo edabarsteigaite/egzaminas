@@ -1,6 +1,7 @@
 Ši programa suskaičiuoja, kiek kartų kiekvienas skirtingas žodis pasikartoja tekste. Tuomet išveda skirtingus žodžius, kurie pasikartojo dažniau negu 1 kartą ir skaičių, nurodantį kiek kartų konkretus žodis pasikartojo.
 Programa taip pat sukuria kryžminę nuorodų tipo lentelę, kuri nurodo, kurioje teksto eilutėje kiekvienas iš daugiau negu vieną kartą pasikartojantis žodis buvo paminėtas.
 Programa ieško URL adresų tekste ir iš to teksto išrenka visus URL'us ir atspausdina ekrane.
+
 Programos naudojimas: paleiskite programą ir įveskite failo pavadinimą, kuriame yra jūsų tekstas.
 
 Programos rezultatai:
