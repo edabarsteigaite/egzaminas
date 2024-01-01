@@ -10,5 +10,8 @@ Programos rezultatai:
 
 <img width="968" alt="Screenshot 2023-12-28 221109" src="https://github.com/edabarsteigaite/egzaminas/assets/145291058/c4e0eae5-00e5-46be-a4b8-689593c76ff4">
 
+Papildoma dalis:
 
+<img width="703" alt="Screenshot 2024-01-01 221025" src="https://github.com/edabarsteigaite/egzaminas/assets/145291058/4dd7ddaf-d60f-401a-9dfe-04c90237856b">
+Programa leidžia ieškoti žodžių su tam tikra dalim, šiuo atveju "avo".
 
