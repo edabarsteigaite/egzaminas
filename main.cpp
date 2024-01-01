@@ -109,6 +109,23 @@ std::unordered_map<std::wstring, std::vector<int>> SukurtiKryzmineNuoroduLentele
 
     return kryzmineNuoroduLentele;
 }
+//papildoma dalis
+std::vector<std::wstring> RastiZodziusSuDalim(const std::wstring& tekstas, const std::wstring& substring) {
+    std::wregex zodzioSuDalimRegex(L"\\w*" + substring + L"\\w*");
+    std::wsmatch atitikmuo;
+    std::vector<std::wstring> zodziaiSuDalim;
+
+    std::wstring::const_iterator pradzia = tekstas.begin();
+    std::wstring::const_iterator pabaiga = tekstas.end();
+
+    while (std::regex_search(pradzia, pabaiga, atitikmuo, zodzioSuDalimRegex)) {
+        zodziaiSuDalim.push_back(atitikmuo[0]);
+        pradzia = atitikmuo.suffix().first;
+    }
+
+    return zodziaiSuDalim;
+}
+
 
 
 
@@ -166,6 +183,14 @@ int main() {
         }
         std::wcout << std::endl;
     }
+    //papildoma dalis
+    std::vector<std::wstring> zodziaiSuDalim = RastiZodziusSuDalim(tekstas, L"avo");
+
+    std::wcout << L"\nŽodžiai su dalim \"avo\":" << std::endl;
+    for (const std::wstring& zodis : zodziaiSuDalim) {
+        std::wcout << zodis << std::endl;
+    }
+
 
     return EXIT_SUCCESS;
 }
